@@ -3,6 +3,7 @@
 *** 
 * 使用方法引入fonts文件和YangFigure文件，然后实例化函数 `YangFigure` 需要闯入两个参数，第一个用于存放轮播图的区域的DOM对象，第二个是轮播图数组对象
   * 数组对象实例 
+  
   `let imgList =  [
 		{
 			"imagesrc" : "images/5.jpg",
@@ -26,4 +27,5 @@
 		},
 		]`
     * 实例化 
-    * `var myFigure = new YangFigure("YangFigure",imgList);`
+    
+    `var myFigure = new YangFigure("YangFigure",imgList);`
