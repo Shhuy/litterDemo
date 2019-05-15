@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<style>
+		* {
+		margin: 0;
+		padding: 0;
+	}
+	#YangFigure {
+		width: 535px;
+		height: 300px;
+		margin: 100px auto;
+		position: relative;
+		background-color: pink;
+		overflow: hidden;
+	}
+	</style>
+</head>
+<body>
+	<div id = "YangFigure">
+		
+	</div>
+	<script src="YangFigure.js"></script>
+	<script>
+		let imgList =  [
+		{
+			"imagesrc" : "images/5.jpg",
+			"linkhref" : "http://www.baidu.com"
+		},
+		{
+			"imagesrc" : "images/6.jpg",
+			"linkhref" : "http://www.jd.com"
+		},
+		{
+			"imagesrc" : "images/7.jpg",
+			"linkhref" : "http://www.taobao.com"
+		},
+		{
+			"imagesrc" : "images/8.jpg",
+			"linkhref" : "http://www.aliyun.com"
+		},
+		{
+			"imagesrc" : "images/9.jpg",
+			"linkhref" : "http://www.baixiu.com"
+		},
+		]
+		var myFigure = new YangFigure("YangFigure",imgList);
+	</script>
+</body>
+</html>
