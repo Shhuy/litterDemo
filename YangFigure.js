@@ -9,17 +9,17 @@ function YangFigure(element, imgList, speed) {
 			// 初始化生成相应的HTML节点
 			YangFigure.prototype.init = function() {
 				let ulObj  = `<ul id = "FigureImg">`;
-				this.imgList.forEach(function(item) {
+				this.imgList.forEach((item) =>{
 					ulObj+= `<li>
 					<a href = "${item.linkhref}">
-					<img src = "${item.imagesrc}" alt = "图片加载失败">
+					<img src = "${item.imagesrc}" width = "${this.element.offsetWidth}}" height = "${this.element.offsetHeight}" alt = "图片加载失败">
 					</a>
 					</li>`;
 				});
 				// 无缝轮播图生成最后一张图片和第一张图片相同
 				ulObj+= `<li>
 				<a href = "${this.imgList[0].linkhref}">
-				<img src = "${this.imgList[0].imagesrc}" alt = "图片加载失败">
+				<img src = "${this.imgList[0].imagesrc}" width = "${this.element.offsetWidth}}" height = "${this.element.offsetHeight}" alt = "图片加载失败">
 				</a>
 				</li>`;
 				ulObj+= `</ul>`;
